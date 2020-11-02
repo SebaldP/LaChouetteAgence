@@ -1,0 +1,14 @@
+Orange:
+#F3976C
+
+Gris:
+#303030
+
+Blanc:
+#F8F9FA
+
+Bleu:
+#364577
+
+Brun:
+#A59363
