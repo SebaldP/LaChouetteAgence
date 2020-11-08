@@ -129,7 +129,7 @@ a {
     background-size: cover;
     position: relative;
     color: #FFFFFF;
-    background: url("img/image-de-presentation.bmp") 50% 50% no-repeat;
+    background: url("img/image-de-presentation.jpg") 50% 50% no-repeat;
     background-attachment: fixed;
 }
 
