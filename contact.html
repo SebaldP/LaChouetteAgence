@@ -2,37 +2,38 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="paris, stratégie web, web design, illustrations, site web, site internet">
-    <meta name="description" content="La chouette agence est une agence de web design qui aide les entreprises à devenir attractives et visibles sur Internet.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-	<link rel="shortcut icon" type="image/png" href="./img/favicon.jpg">
+    <meta name="keywords" content="la chouette agence web design, entreprise web design lyon, stratégie web, illustrations">
+    <meta name="description" content="Nous sommes ravis que vous souhaitiez collaborer avec notre agence pour vos projets web design. Parlez nous de vos projets et nous vous apporterons tout ce qui est nécessaire à votre réussite sur les réseaux internet.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<meta name="robots" content="index, nofollow">
+	<link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-    <title>Contact - La chouette agence</title>
+    <title>Prendre contact avec La chouette agence &#128238;</title>
 </head>
 <body>
 	<div class="page-container">
-		<nav id="nav_container" class="navbar container">
+		<nav id="nav_container" class="navbar container" role="navigation">
 			<div class="row">
 				<div class="navbar-header">
-					<a id="nav_container__brand" class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="La chouette agence" height="40" /></a>
-					<button id="nav_container__toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-						<span class="sr-only">Toggle navigation</span>
+					<div id="nav_container__brand" class="navbar-brand"><img src="img/la-chouette-agence.png" alt="La chouette agence, logo" height="40" /></div>
+					<button id="nav_container__toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav_container_links" aria-label="menu">
 						<i class="fas fa-bars"></i>
 					</button>
 				</div>
-				<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-					<ul class="site-navigation nav navbar-nav">
-						<li><a href="index.html">Accueil</a></li>
-						<li><a href="contact.html">Contact</a></li>
+				<div id="nav_container_links" class="collapse navbar-collapse">
+					<ul id="nav_container_links_group" class="site-navigation nav navbar-nav">
+						<li><a href="index.html" aria-label="Retournez à la page d'accueil." rel="nofollow">Accueil</a></li>
+						<li><a href="contact.html" aria-label="Allez sur la page Contact.">Contact</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
-		<header id="appreciation">
+		<header id="appreciation" role="banner">
 			<div id="appreciation__container" class="container">
 				<div class="row">
 					<div class="col-sm-12">
@@ -42,26 +43,26 @@
 				</div>
 			</div>
 		</header>
-		<main id="formular">
+		<main id="formular" role="main">
 			<div id="formular__container" class="container">
 				<div class="row">
 					<div class="col-sm-6">
 						<form id="form_1" novalidate success-msg="Votre message a bien été envoyé." fail-msg="Nous sommes au regret de vous signaler que notre serveur n'a pas répondu à votre envoi. Nous nous excusons de la gêne occasionnée!">
 							<div class="form-group">
-								<label>Nom</label>
-								<input id="name" class="form-control" required />
+								<label for="name">Votre nom</label>
+								<input name="name" id="name" class="form-control" aria-required="true" aria-label="Indiquez votre nom" required />
 							</div>
 							<div class="form-group">
-								<label>Adresse E-mail</label>
-								<input id="email" class="form-control" type="email" required />
+								<label for="email">Votre adresse E-mail</label>
+								<input name="email" id="email" class="form-control" type="email" aria-required="true" aria-label="Indiquez votre adresse e-mail" required />
 							</div>
 							<div class="form-group">
-								<label>Comment nous avez-vous connu ?</label>
-								<input class="form-control" type="email" required id="input_504" />
+								<label for="origin">Comment nous avez-vous connu ?</label>
+								<input name="origin" id="origin" class="form-control" type="email" aria-required="true" aria-label="Comment nous avez-vous connu ?" required />
 							</div>
 							<div class="form-group">
-								<label>Brief de votre projet (Ajoutez autant de détails que nécessaire)</label>
-								<textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+								<label for="message">Brief de votre projet (Ajoutez autant de détails que nécessaire)</label>
+								<textarea name="message" id="message" class="form-control" rows="4" cols="50" aria-required="true" aria-label="Brief de votre projet (Ajoutez autant de détails que nécessaire)	" required></textarea>
 							</div>
 							<button id="formular__container__button" type="submit">Envoyer</button>
 						</form>
@@ -74,16 +75,18 @@
 			</div>
 		</main>
 		<footer>
-			<div id="footer__container"  class="container">
+			<div id="footer__container" class="container">
 				<div class="row">
 					<div class="col-sm-12">
 						<p id="footer__container__text" class="text-center">&copy; La chouette agence - Agence web basée à Lyon.</p>
-						<div id="footer__container__group" class="row">
-							<div class="col-sm-3"><a href="https://twitter.com/"><span class="fab fa-twitter footer__container__group__icon"></span></a></div>
-							<div class="col-sm-3"><a href="https://www.facebook.com/"><span class="fab fa-facebook footer__container__group__icon"></span></a></div>
-							<div class="col-sm-3"><a href="https://dribbble.com/"><span class="fab fa-dribbble footer__container__group__icon"></span></a></div>
-							<div class="col-sm-3"><a href="https://www.instagram.com/"><span class="fab fa-instagram footer__container__group__icon"></span></a></div>
-						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<a href="https://twitter.com/" rel="nofollow" aria-label="Retrouvez nous sur Twitter"><span class="fab fa-twitter footer__container__group__icon"></span></a>
+						<a href="https://www.facebook.com/" rel="nofollow" aria-label="Retrouvez nous également sur Facebook"><span class="fab fa-facebook footer__container__group__icon"></span></a>
+						<a href="https://dribbble.com/" rel="nofollow" aria-label="Retrouvez nous professionnellement sur Dribbble"><span class="fab fa-dribbble footer__container__group__icon"></span></a>
+						<a href="https://www.instagram.com/" rel="nofollow" aria-label="Retrouvez nous visuellement sur Instagram"><span class="fab fa-instagram footer__container__group__icon"></span></a>
 					</div>
 				</div>
 			</div>
@@ -92,7 +95,5 @@
 	<script src="./js/jquery-2.1.0.js" defer></script>
 	<script src="./js/bootstrap.js" defer></script>
 	<script src="./js/blocs.js" async></script>
-	<script src="./js/jqBootstrapValidation.js" async></script>
-	<script src="./js/formHandler.js" async></script>
 </body>
 </html>
