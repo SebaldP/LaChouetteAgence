@@ -31,7 +31,7 @@ h6,
 p,
 label,
 a {
-    color: #575757
+    color: #303030
 }
 
 /*a:focus, button:active {
@@ -40,49 +40,7 @@ a {
 }*/
 
 #nav_container{
-    width: 100%;
-    padding: 20px 50px;
-    z-index: 1;
-    background: #FFFFFF;
-    position: relative
-}
-
-#nav_container__brand {
-    height: auto;
-}
-
-#nav_container__brand img {
-    max-height: 200px;
-    display: inline
-}
-
-#nav_container__toggle{
-    margin: auto 0 auto 15px;
-}
-
-#nav_container__toggle i {
-    font-size: 15px;
-}
-
-#nav_container_links_group {
-    float: right;
-    z-index: 1;
-    margin: 0 15px 0 15px
-}
-#nav_container_links_group > li {
-    float: left;
-    font-size: 16px
-}
-#nav_container_links_group .open .dropdown-menu > li > a {
-    text-align: inherit
-}
-#nav_container_links_group > li a:hover,
-#nav_container_links_group > li a:focus {
-    background: transparent
-}
-#nav_container_links_group > li > .dropdown a {
-    background: none;
-    display: block;
+    padding: 40px;
 }
 
 #presentation{
@@ -98,15 +56,10 @@ a {
     padding: 100px 50px
 }
 
-#presentation__container__row{
-    max-width: 600px;
-    margin: auto
-}
-
 #presentation__container__row__name{
     margin-top: 20px;
     font-size: 32px;
-    background-color: transparent;
+    background-color: unset;
     color: #F3976C
 }
 
@@ -240,7 +193,7 @@ a {
 #portfolio__container__row__title__4{
     font-family: 'Libre Baskerville', serif;
     font-size: 18px;
-    margin: 10px 0 10px 0
+    margin: 20px 0 10px 0
 }
 
 #portfolio__container__row__text__1,
@@ -261,6 +214,11 @@ a[data-lightbox]:hover::before {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
     font-size: 32px;
     font-weight: 100;
+    color: #FFF;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
     width: 2em;
     height: 2em;
     border-radius: 50%;
@@ -268,12 +226,7 @@ a[data-lightbox]:hover::before {
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, .6);
-    color: #FFF;
     z-index: 1;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%)
 }
 a[data-lightbox]:hover img {
     opacity: 0.6;
@@ -290,8 +243,7 @@ a[data-lightbox]:hover img {
     margin: 0 auto 0
 }
 #lightbox-modal .modal-dialog img {
-    max-height: 90vh;
-    margin: 0 auto
+    max-height: 90vh
 }
 .lightbox-caption {
     padding: 20px;
@@ -365,7 +317,7 @@ a[data-lightbox]:hover img {
     font-family: 'Libre Baskerville', serif;
     margin-top: 10px;
     margin-bottom: 20px;
-    background-color: transparent;
+    background-color: unset;
     color: #FFFFFF
 }
 
@@ -399,6 +351,7 @@ background: #c27956
 }
 
 #appreciation__container__title{
+    margin-top: 40px;
     font-family: 'Libre Baskerville', serif;
     font-size: 38px;
     color: #303030;
@@ -483,48 +436,21 @@ footer{
     color:#303030
 }
 
-#footer__container .footer__container__group__icon {
+#footer__container__group .footer__container__group__icon {
     font-size: 30px;
     color:#303030;
-    transition: all .3s ease-in-out
+    transition: color .3s ease-in-out
 }
 
-#footer__container .footer__container__group__icon:nth-child(n+1) {
+#footer__container__group .footer__container__group__icon:nth-of-type(n+1) {
     margin-left: 30px
 }
 
-#footer__container .footer__container__group__icon:hover{
+#footer__container__group .footer__container__group__icon:hover{
     color: #364577
 }
 
 @media (max-width: 767px) {
-    #nav_container_links_group {
-        padding-top: 0;
-        border-top: 1px solid rgba(0, 0, 0, .2);
-        float: none
-    }
-    #nav_container_links_group {
-        position: inherit;
-        transform: none;
-        -webkit-transform: none;
-        -ms-transform: none
-    }
-    #nav_container_links_group > li {
-        margin-top: 0;
-        border-bottom: 1px solid rgba(0, 0, 0, .1);
-        background: rgba(0, 0, 0, .05);
-        text-align: left;
-        width: 100%
-    }
-    #nav_container_links_group > li:hover {
-        background: rgba(0, 0, 0, .08);
-    }
-    #nav_container_links {
-        padding: 0;
-        overflow-x: hidden;
-        -webkit-box-shadow: none;
-        box-shadow: none
-    }
     #services__container__quote {
         margin-top: 30px
     }
@@ -542,5 +468,8 @@ footer{
     }
     #formular__container__proposition--alternative{
         margin-top: 50px;
+    }
+    #footer__container__group .footer__container__group__icon:nth-of-type(n+1) {
+        margin-left: 15px
     }
 }
