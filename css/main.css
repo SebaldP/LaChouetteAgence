@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    padding: 0;
+    background: #FFF;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+a,
+button {
+    transition: all .3s ease-in-out;
+    outline: none
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label,
+a {
+    color: #303030
+}
+
+#nav_container a:focus,
+.portfolio__container__row a:focus,
+#formular__container__button:focus,
+#formular__container a:focus,
+#contact__container__button:focus,
+#footer__container__group a:focus .footer__container__group__icon {
+    outline: .3rem solid #364577;
+    box-sizing: content-box;
+}
+
+#nav_container{
+    padding: 2.5rem;
+}
+
+#nav_container__brand img{
+    height: 2.5rem;
+}
+
+#presentation{
+    width: 100%;
+    background: url("../img/la-chouette-agence-banniere.jpg") 50% 50% no-repeat;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto
+}
+
+#presentation__container{
+    padding: 6.25rem 3.125rem
+}
+
+#presentation__container__row__name{
+    margin-top: 1.25rem;
+    font-size: 2rem;
+    background-color: unset;
+    color: #F3976C
+}
+
+#services{
+    width: 100%;
+    background: url("../img/dots-bg.png") 50% 50% repeat;
+    padding: 1.5625rem 3.125rem;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto
+}
+
+#services__container{
+    padding: 3.125rem
+}
+
+#services__container h1{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5rem;
+    margin-bottom: 4.5rem
+}
+
+#services__container__section{
+    max-width: 62rem;
+    margin: auto;
+}
+
+#services__container .services__container__section__icon{
+    font-size: 3.75rem;
+    color: #364577;
+    text-shadow: 0 .0625rem .125rem rgba(0, 0, 0, .3);
+    margin-bottom: .875rem;
+    margin-top: 1.5rem
+}
+
+#services__container .services__container__section__title{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.25rem;
+    margin-top: .625rem;
+    margin-bottom: 1.25rem
+}
+
+#services__container .services__container__section__text{
+    font-size: 1rem;
+}
+
+#services__container__quote{
+    margin-top: 4.5rem;
+    font-size: 1rem;
+}
+
+#services__container__quote q{
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+#services__container__quote q strong{
+    font-weight: bold;
+}
+
+#services__container__quote a{
+    font-family: 'Libre Baskerville', serif;
+    font-size: .875rem;
+}
+
+
+#motivations{
+    width: 100%;
+    padding: 0 3.125rem;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    color: #FFFFFF;
+    background: url("../img/image-de-presentation.jpg") 50% 50% no-repeat;
+    background-attachment: fixed
+}
+
+#motivations__container{
+    max-width: 37.5rem;
+    margin: auto;
+    padding: 6.25rem 3.125rem
+}
+
+#motivations__container__title{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5rem;
+    color: #303030;
+    margin-top: .625rem;
+    margin-bottom: 1.25rem
+}
+
+#motivations__container__title strong{
+    font-weight: 700;
+}
+
+#motivations__container__text{
+    font-size: 1rem;
+    color: #303030
+}
+
+#portfolio{
+    width: 100%;
+    background: url("../img/dots-bg.png") 50% 50% repeat;
+    padding: 1.5625rem 3.125rem;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+    position: relative
+}
+
+#portfolio__container{
+    padding: 6.25rem 3.125rem
+}
+
+#portfolio__container h2{
+    font-size: 1.5rem
+}
+
+#portfolio__container .portfolio__container__row{
+    max-width: 37.5rem;
+    margin: 3.125rem auto
+}
+
+#portfolio__container .portfolio__container__row .portfolio__container__row__image{         
+    width: 100%
+}
+
+#portfolio__container__row__title__1,
+#portfolio__container__row__title__2,
+#portfolio__container__row__title__3,
+#portfolio__container__row__title__4{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.125rem;
+    margin: 1.25rem 0 .625rem 0
+}
+
+#portfolio__container__row__text__1,
+#portfolio__container__row__text__2,
+#portfolio__container__row__text__3,
+#portfolio__container__row__text__4{
+    font-size: 1rem;
+    margin: .625rem 0 1.25rem 0
+}
+
+a[data-lightbox] {
+    position: relative;
+    display: flex;
+    justify-content: center
+}
+a[data-lightbox]:hover::before {
+    content: "+";
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+    font-size: 2rem;
+    font-weight: 100;
+    color: #FFF;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .6);
+    z-index: 1;
+}
+a[data-lightbox]:hover img {
+    opacity: 0.6;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none
+}
+
+#contact{
+    width: 100%;
+    background: url("../img/la-chouette-agence-banniere.jpg") 50% 50% no-repeat;
+    padding: 0 3.125rem;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative
+}
+
+#contact__container{
+    padding: 6.25rem 3.125rem
+}
+
+#contact__container__title{
+    font-family: 'Libre Baskerville', serif;
+    margin-top: .625rem;
+    margin-bottom: 1.25rem;
+    background-color: unset;
+    color: #FFFFFF
+}
+
+#contact__container__button{
+    margin: 1.25rem 0;
+    padding: .75rem 1.75rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #303030;
+    background: #F3976C;
+    border: .0625rem solid rgba(0, 0, 0, .08);
+    text-shadow: 0 .0625rem 0 rgba(0, 0, 1, .1);
+    box-shadow: 0 .0625rem .1875px rgba(0, 0, 1, .25), inset 0 .0625rem 0 0 rgba(255, 255, 255, .15);
+    border-radius: 2.5rem
+}
+
+#contact__container__button:hover{
+background: #c27956
+}
+
+#appreciation{
+    width: 100%;
+    padding: 1.25rem 2.5rem;
+    background: url("../img/dots-bg.png") 50% 50% repeat;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+    position: relative
+}
+
+#appreciation__container__title{
+    margin-top: 2.5rem;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.375rem;
+    color: #303030;
+}
+
+#appreciation__container__proposition{
+    max-width: 37.5rem;
+    margin: 2.5rem auto;
+    font-size: 1.75rem;
+    color:#303030
+}
+
+#formular{
+    width: 100%;
+    padding: 0 2.5rem;
+}
+
+#formular__container{
+    padding: 6.25rem 3.125rem
+}
+
+#formular__container label,
+#formular__container p{
+    font-size: 1rem;
+}
+
+.form-control {
+    border-color: rgba(0, 0, 0, .1);
+    box-shadow: none
+}
+
+#formular__container__button{
+    display: block;
+    margin-top: 1.375rem;
+    padding: .75rem 1.75rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.42857143;
+    color: #303030;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: #F3976C;
+    border: .0625rem solid transparent;
+    border-radius: .375rem
+}
+
+#formular__container__button:hover{
+    background: #c27956
+}
+
+#formular__container__proposition--alternative{
+    font-size: 1.75rem;
+    color: #303030
+}
+
+footer{
+    width: 100%;
+    padding: 0 3.125rem;
+    background: #F3976C 50% 50% no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative
+}
+
+#footer__container{
+    padding: 1.25rem 3.125rem;
+    margin: auto
+}
+
+#footer__container__text{
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+    color:#303030
+}
+
+#footer__container__group a{
+    height: 3.6rem;
+}
+
+#footer__container__group .footer__container__group__icon {
+    font-size: 1.875rem;
+    color:#303030;
+    transition: color .3s ease-in-out
+}
+
+#footer__container__group .footer__container__group__icon:hover{
+    color: #364577
+}
+
+@media (max-width: 767px) {
+    #services__container__quote {
+        margin-top: 1.875rem
+    }
+    #portfolio__container .portfolio__container__row__box{
+        margin-bottom: 3.75rem
+    }
+    #portfolio__container h2{
+        margin-bottom: 5.625rem
+    }
+    #portfolio__container .row{
+        margin: 0
+    }
+    .close-lightbox {
+        display: inline-block
+    }
+    #formular__container__proposition--alternative{
+        margin-top: 3.125rem;
+    }
+    #footer__container__group .footer__container__group__icon:nth-of-type(n+1) {
+        margin-left: .9375rem
+    }
+}

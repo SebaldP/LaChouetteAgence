@@ -9,22 +9,22 @@
 	<link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/bootstrap-4.5.3.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
     <title>Prendre contact avec La chouette agence &#128238;</title>
 </head>
 <body>
 	<div class="page-container">
-		<nav id="nav_container" class="navbar navbar-expand-lg navbar-light white">
-			<div id="nav_container__brand" class="navbar-brand"><img src="img/la-chouette-agence.png" alt="La chouette agence, navigation logo" height="40" /></div>
-			<button id="nav_container__toggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<nav id="nav_container" class="navbar navbar-expand-lg navbar-light white" role="navigation">
+			<div id="nav_container__brand" class="navbar-brand"><img src="img/la-chouette-agence.png" alt="La chouette agence, logo" height="40" /></div>
+			<button id="nav_container__toggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Barre de navigation">
 				<i class="fas fa-bars"></i>
 			</button>
 			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 				<ul class="navbar-nav">
-					<li class="nav-item active">
+					<li class="nav-item">
 						<a class="nav-link" href="index.html" aria-label="Allez sur la page d'accueil.">Accueil<span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
@@ -36,7 +36,7 @@
 					<li class="nav-item">
 						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Tarifs</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item active">
 						<a class="nav-link" href="contact.html" aria-label="Allez sur la page Contact." rel="nofollow">Contactez-nous</a>
 					</li>
 				</ul>
@@ -56,29 +56,29 @@
 			<div id="formular__container" class="container">
 				<div class="row">
 					<div class="col-sm-6">
-						<form id="form_1" novalidate success-msg="Votre message a bien été envoyé." fail-msg="Nous sommes au regret de vous signaler que notre serveur n'a pas répondu à votre envoi. Nous nous excusons de la gêne occasionnée!">
+						<form id="form_1" aria-label="Envoyer un message">
 							<div class="form-group">
 								<label for="name">Votre nom</label>
-								<input name="name" id="name" class="form-control" aria-required="true" aria-label="Indiquez votre nom" required />
+								<input name="name" id="name" class="form-control" autocorrect="off" aria-required="true" aria-label="Indiquez votre nom" required />
 							</div>
 							<div class="form-group">
 								<label for="email">Votre adresse E-mail</label>
-								<input name="email" id="email" class="form-control" type="email" aria-required="true" aria-label="Indiquez votre adresse e-mail" required />
+								<input name="email" id="email" class="form-control" autocorrect="off" type="email" aria-required="true" aria-label="Indiquez votre adresse e-mail" required />
 							</div>
 							<div class="form-group">
 								<label for="origin">Comment nous avez-vous connu ?</label>
-								<input name="origin" id="origin" class="form-control" type="email" aria-required="true" aria-label="Comment nous avez-vous connu ?" required />
+								<input name="origin" id="origin" class="form-control" type="email" autocomplete="email" autocapitalize="off" autocorrect="off" spellcheck="false" aria-required="true" aria-label="Comment nous avez-vous connu ?" required />
 							</div>
 							<div class="form-group">
 								<label for="message">Brief de votre projet (Ajoutez autant de détails que nécessaire)</label>
 								<textarea name="message" id="message" class="form-control" rows="4" cols="50" aria-required="true" aria-label="Brief de votre projet (Ajoutez autant de détails que nécessaire)	" required></textarea>
 							</div>
-							<button id="formular__container__button" type="submit">Envoyer</button>
+							<button id="formular__container__button" type="submit" aria-label="Envoyer votre formulaire">Envoyer votre formulaire</button>
 						</form>
 					</div>
 					<div class="col-sm-6">
 						<h2 id="formular__container__proposition--alternative">ou contactez nous directement:</h2>
-						<p><a href="mailto:contact@lachouetteagence.com">contact@lachouetteagence.com</a><br>2, place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi</p>
+						<p><a href="mailto:contact@lachouetteagence.com" aria-label="Si vous le préférez: Envoyez nous un mail directement à contact@lachouetteagence.com">contact@lachouetteagence.com</a><br>2, place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi</p>
 					</div>
 				</div>
 			</div>
@@ -87,23 +87,22 @@
 			<div id="footer__container" class="container text-center">
 				<div class="row">
 					<div class="col-sm-12">
-						<p id="footer__container__text" class="text-center">&copy; La chouette agence - Agence web basée à Lyon.</p>
+						<p id="footer__container__text">&copy; La chouette agence - Agence web basée à Lyon.</p>
 					</div>
 				</div>
 				<div class="row">
 					<div id="footer__container__group" class="col-sm-12">
-						<a href="https://twitter.com/" rel="nofollow" aria-label="Retrouvez nous sur Twitter"><span class="fab fa-twitter footer__container__group__icon"></span></a>
-						<a href="https://www.facebook.com/" rel="nofollow" aria-label="Retrouvez nous également sur Facebook"><span class="fab fa-facebook footer__container__group__icon"></span></a>
-						<a href="https://dribbble.com/" rel="nofollow" aria-label="Retrouvez nous professionnellement sur Dribbble"><span class="fab fa-dribbble footer__container__group__icon"></span></a>
-						<a href="https://www.instagram.com/" rel="nofollow" aria-label="Retrouvez nous visuellement sur Instagram"><span class="fab fa-instagram footer__container__group__icon"></span></a>
+						<a href="https://twitter.com/" class="tw-ic mr-3" rel="nofollow" aria-label="Retrouvez nous sur Twitter."><i class="fab fa-twitter footer__container__group__icon"></i></a>
+						<a href="https://www.facebook.com/" class="fb-ic mr-3" rel="nofollow" aria-label="Retrouvez nous également sur Facebook."><i class="fab fa-facebook footer__container__group__icon"></i></a>
+						<a href="https://dribbble.com/" class="dribbble-ic mr-3" rel="nofollow" aria-label="Retrouvez nous professionnellement sur Dribbble."><i class="fab fa-dribbble footer__container__group__icon"></i></a>
+						<a href="https://www.instagram.com/" class="ins-ic" rel="nofollow" aria-label="Retrouvez nous visuellement sur Instagram."><i class="fab fa-instagram footer__container__group__icon"></i></a>
 					</div>
 				</div>
 			</div>
 		</footer>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" defer></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" defer></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" defer></script>
-	<script src="./js/blocs.js" async></script>
+	<script src="./js/jquery-3.5.1.slim.min.js" defer></script>
+	<script src="./js/popper-1.16.1.min.js" defer></script>
+	<script src="./js/bootstrap-4.5.3.min.js" defer></script>
 </body>
 </html>

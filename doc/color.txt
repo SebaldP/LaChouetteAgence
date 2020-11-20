@@ -1,0 +1,54 @@
+Orange:
+#F3976C
+
+Gris:
+#303030
+
+Blanc:
+#F8F9FA
+
+Bleu:
+#364577
+
+Brun:
+#A59363
+
+-------------------
+
+Orange: #F3976C - Gris: #303030 (Contrast: 5.941741376352788, Passes AA level for any size text and AAA for large text (above 18pt or bold above 14pt))
+Orange: #F3976C - Blanc: #F8F9FA (Contrast: 2.1072277751378325, Fails WCAG 2.0)
+Orange: #F3976C - Bleu: #364577 (Contrast: 4.156600030548568, Passes AA for large text (above 18pt or bold above 14pt))
+Orange: #F3976C - Brun: #A59363 (Contrast: 1.3596159471272444, Fails WCAG 2.0)
+
+Gris: #303030 - Blanc: #F8F9FA (Contrast: 12.52060246093629, Passes AAA level for any size text)
+Gris: #303030 - Bleu: #364577 (Contrast: 1.4294715230439494, Fails WCAG 2.0)
+Gris: #303030 - Brun: #A59363 (Contrast: 4.370161580486896, Passes AA for large text (above 18pt or bold above 14pt))
+
+Blanc: #F8F9FA - Bleu: #364577 (Contrast: 8.758903034510707, Passes AAA level for any size text)
+Blanc: #F8F9FA - Brun: #A59363 (Contrast: 2.8650204873068605, Fails WCAG 2.0)
+
+Bleu: #364577 - Brun: #A59363 (Contrast: 3.0571868764345687, Passes AA for large text (above 18pt or bold above 14pt))
+
+-------------------
+
+Passes AAA level for any size text:
+Blanc: #F8F9FA - Bleu: #364577;
+Gris: #303030 - Blanc: #F8F9FA
+
+Passes AA level for any size text and AAA for large text (above 18pt or bold above 14pt):
+Orange: #F3976C - Gris: #303030
+
+Passes AA for large text (above 18pt or bold above 14pt):
+Orange: #F3976C - Bleu: #364577;
+Gris: #303030 - Brun: #A59363;
+Bleu: #364577 - Brun: #A59363
+
+Don't use:
+Orange: #F3976C - Blanc: #F8F9FA;
+Orange: #F3976C - Brun: #A59363;
+Gris: #303030 - Bleu: #364577;
+Blanc: #F8F9FA - Brun: #A59363
+
+
+
+
