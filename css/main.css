@@ -416,10 +416,6 @@ footer{
     color:#303030
 }
 
-#footer__container__group a{
-    height: 3.6rem;
-}
-
 #footer__container__group .footer__container__group__icon {
     font-size: 1.875rem;
     color:#303030;
@@ -444,5 +440,13 @@ footer{
         margin-top: 0;
         margin-bottom: 0
     }
-    
+    #appreciation{
+        -webkit-background-size: 25%;
+        -moz-background-size: 25%;
+        -o-background-size: 25%;
+        background-size: 25%
+    }
+    #footer__container__group .footer__container__group__icon {
+        font-size: 1.6rem;
+    }
 }
