@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://lachouette-agence.fr/">
+    <url>
+        <loc>http://lachouette-agence.fr/</loc>
+        <lastmod>2020-11-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1</priority>
+    </url>
+    <url>
+        <loc>http://lachouette-agence.fr/page/contact.html</loc>
+        <lastmod>2012-12-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>
