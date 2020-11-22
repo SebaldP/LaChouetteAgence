@@ -3,7 +3,7 @@
 
 body {
     padding: 0;
-    background: #FFF;
+    background: #F8F9FA;
     overflow-x: hidden;
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
@@ -18,7 +18,7 @@ button {
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration: underline;
     cursor: pointer
 }
 
@@ -65,13 +65,6 @@ a {
     padding: 6.25rem 3.125rem
 }
 
-#presentation__container__row__name{
-    margin-top: 1.25rem;
-    font-size: 2rem;
-    background-color: unset;
-    color: #F3976C
-}
-
 #services{
     width: 100%;
     background: url("../img/dots-bg.png") 50% 50% repeat;
@@ -90,6 +83,10 @@ a {
     font-family: 'Libre Baskerville', serif;
     font-size: 1.5rem;
     margin-bottom: 4.5rem
+}
+
+#services__container h1 em{
+    font-style: italic;
 }
 
 #services__container__section{
@@ -145,7 +142,7 @@ a {
     -o-background-size: cover;
     background-size: cover;
     position: relative;
-    color: #FFFFFF;
+    color: #F8F9FA;
     background: url("../img/image-de-presentation.jpg") 50% 50% no-repeat;
     background-attachment: fixed
 }
@@ -228,7 +225,7 @@ a[data-lightbox]:hover::before {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
     font-size: 2rem;
     font-weight: 100;
-    color: #FFF;
+    color: #F8F9FA;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -267,8 +264,8 @@ a[data-lightbox]:hover img {
     font-family: 'Libre Baskerville', serif;
     margin-top: .625rem;
     margin-bottom: 1.25rem;
-    background-color: unset;
-    color: #FFFFFF
+    background-color: transparent;
+    color: #F8F9FA
 }
 
 #contact__container__button{
@@ -282,11 +279,13 @@ a[data-lightbox]:hover img {
     border: .0625rem solid rgba(0, 0, 0, .08);
     text-shadow: 0 .0625rem 0 rgba(0, 0, 1, .1);
     box-shadow: 0 .0625rem .1875px rgba(0, 0, 1, .25), inset 0 .0625rem 0 0 rgba(255, 255, 255, .15);
+    border-bottom-color: rgba(0,0,0,.1);
     border-radius: 2.5rem
 }
 
 #contact__container__button:hover{
-background: #c27956
+    color: #F3976C;
+    background: #303030
 }
 
 #appreciation{
@@ -308,7 +307,6 @@ background: #c27956
 }
 
 #appreciation__container__proposition{
-    max-width: 37.5rem;
     margin: 2.5rem auto;
     font-size: 1.75rem;
     color:#303030
@@ -357,12 +355,38 @@ background: #c27956
 }
 
 #formular__container__button:hover{
-    background: #c27956
+    color: #F3976C;
+    background: #303030
 }
 
-#formular__container__proposition--alternative{
+#formular__container__proposition--alternative__title{
+    margin-top: 3.125rem;
+    margin-bottom: 1rem;
     font-size: 1.75rem;
     color: #303030
+}
+
+#formular__container__proposition--alternative__address h3,
+#formular__container__proposition--alternative__opening_time h3,
+#formular__container__proposition--alternative__email h3{
+    margin: 1rem 0 .25rem 0;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1rem;
+    color: #303030
+}
+
+#formular__container__proposition--alternative__address iframe{
+    height: 20rem;
+    width: 100%;
+    border: 0;
+}
+
+#formular__container__proposition--alternative__opening_time li{
+    list-style-type: "\2705";
+}
+
+#formular__container__proposition--alternative__opening_time li:nth-child(n+6){
+    list-style-type: "\274C";
 }
 
 footer{
@@ -401,7 +425,7 @@ footer{
     color: #364577
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     #services__container__quote {
         margin-top: 1.875rem
     }
@@ -412,12 +436,8 @@ footer{
         margin-bottom: 5.625rem
     }
     #portfolio__container .row{
-        margin: 0
+        margin-top: 0;
+        margin-bottom: 0
     }
-    #formular__container__proposition--alternative{
-        margin-top: 3.125rem;
-    }
-    #footer__container__group .footer__container__group__icon:nth-of-type(n+1) {
-        margin-left: .9375rem
-    }
+    
 }
