@@ -39,6 +39,7 @@ a {
 #formular__container__button:focus,
 #formular__container a:focus,
 #contact__container__button:focus,
+#footer__container #legal_notices:focus,
 #footer__container__group a:focus .footer__container__group__icon {
     outline: .3rem solid #364577;
     box-sizing: content-box;
@@ -291,25 +292,20 @@ a[data-lightbox]:hover img {
 #appreciation{
     width: 100%;
     padding: 1.25rem 2.5rem;
-    background: url("../img/dots-bg.png") 50% 50% repeat;
-    -webkit-background-size: auto;
-    -moz-background-size: auto;
-    -o-background-size: auto;
-    background-size: auto;
+    background: url("../img/contact_header_bg.png") 50% 50% no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
     position: relative
 }
 
 #appreciation__container__title{
     margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
     font-family: 'Libre Baskerville', serif;
     font-size: 2.375rem;
     color: #303030;
-}
-
-#appreciation__container__proposition{
-    margin: 2.5rem auto;
-    font-size: 1.75rem;
-    color:#303030
 }
 
 #formular{
@@ -319,6 +315,13 @@ a[data-lightbox]:hover img {
 
 #formular__container{
     padding: 6.25rem 3.125rem
+}
+
+#formular__container__proposition{
+    margin-bottom: 5rem;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2rem;
+    color: #303030
 }
 
 #formular__container label,
@@ -360,9 +363,9 @@ a[data-lightbox]:hover img {
 }
 
 #formular__container__proposition--alternative__title{
-    margin-top: 3.125rem;
-    margin-bottom: 1rem;
-    font-size: 1.75rem;
+    margin: 5rem auto 2.5rem;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2rem;
     color: #303030
 }
 
@@ -370,23 +373,25 @@ a[data-lightbox]:hover img {
 #formular__container__proposition--alternative__opening_time h3,
 #formular__container__proposition--alternative__email h3{
     margin: 1rem 0 .25rem 0;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
     color: #303030
 }
 
 #formular__container__proposition--alternative__address iframe{
     height: 20rem;
     width: 100%;
+    margin-bottom: 1rem;
     border: 0;
 }
 
 #formular__container__proposition--alternative__opening_time li{
-    list-style-type: "\2705";
+    list-style-type: "\2714";
+    list-style-position: outside;
 }
 
 #formular__container__proposition--alternative__opening_time li:nth-child(n+6){
-    list-style-type: "\274C";
+    list-style-type: "\2716";
 }
 
 footer{
