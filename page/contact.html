@@ -64,39 +64,41 @@
 		</header>
 		<main id="formular">
 			<div id="formular__container" class="container">
-				<div class="row">
+				<div class="row" role="region" aria-labelledby="formular__container__proposition">
 					<div class="col-lg-12">
 						<h2 id="formular__container__proposition" class="text-center">Parlez-nous de votre projet en complétant le formulaire <em>ci-dessous</em>:</h2>
 						<form id="form_1" aria-label="Envoyer un message">
 							<div class="form-group">
 								<label for="name">Votre nom</label>
-								<input name="name" id="name" class="form-control" aria-label="Indiquez votre nom" required />
+								<input name="name" id="name" class="form-control" required />
 							</div>
 							<div class="form-group">
 								<label for="email">Votre adresse E-mail</label>
-								<input name="email" id="email" class="form-control" type="email" aria-label="Indiquez votre adresse e-mail" required />
+								<input name="email" id="email" class="form-control" type="email" required />
 							</div>
 							<div class="form-group">
 								<label for="origin">Comment nous avez-vous connu ?</label>
-								<input name="origin" id="origin" class="form-control" type="email" autocomplete="email" autocapitalize="off" spellcheck="false" aria-label="Comment nous avez-vous connu ?" required />
+								<input name="origin" id="origin" class="form-control" type="email" autocomplete="email" autocapitalize="off" spellcheck="false" required />
 							</div>
 							<div class="form-group">
 								<label for="message">Brief de votre projet (Ajoutez autant de détails que nécessaire)</label>
-								<textarea name="message" id="message" class="form-control" rows="4" cols="50" aria-label="Brief de votre projet (Ajoutez autant de détails que nécessaire)" required></textarea>
+								<textarea name="message" id="message" class="form-control" rows="4" cols="50" required></textarea>
 							</div>
-							<button id="formular__container__button" type="submit" aria-label="Envoyer votre formulaire">Envoyer</button>
+							<button id="formular__container__button" type="submit" value="Envoyer" aria-label="Envoyer votre formulaire">Envoyer</button>
 						</form>
 					</div>
-					<div id="formular__container__proposition--alternative__title" class="col-lg-12 text-center">
-						<h2>Si vous souhaitez nous contacter <em>directement</em>:</h2>
+				</div>
+				<div class="row" role="region" aria-labelledby="formular__container__proposition--alternative__title__h2">
+					<div id="formular__container__proposition--alternative__title" class="col-lg-12 text-center" aria-labelledby="formular__container__proposition--alternative__title__h2">
+						<h2 id="formular__container__proposition--alternative__title__h2">Si vous souhaitez nous contacter <em>directement</em>:</h2>
 					</div>
-					<div id="formular__container__proposition--alternative__address" class="col-lg-4">
-						<h3>Adresse:</h3>
+					<div id="formular__container__proposition--alternative__address" class="col-lg-4" role="region" aria-labelledby="formular__container__proposition--alternative__address__h3">
+						<h3 id="formular__container__proposition--alternative__address__h3">Adresse:</h3>
 						<p>2, place Sathonay 69001 Lyon</p>
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.0829506555874!2d4.827978615839394!3d45.76952782103836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb020f3664e9%3A0x13e3d71752922c1f!2s2%20Place%20Sathonay%2C%2069001%20Lyon!5e0!3m2!1sfr!2sfr!4v1606063248665!5m2!1sfr!2sfr" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 					</div>
-					<div id="formular__container__proposition--alternative__opening_time" class="col-lg-4">
-						<h3>Horaires d'ouverture:</h3>
+					<div id="formular__container__proposition--alternative__opening_time" class="col-lg-4" role="region" aria-labelledby="formular__container__proposition--alternative__opening_time__h3">
+						<h3 id="formular__container__proposition--alternative__opening_time__h3">Horaires d'ouverture:</h3>
 						<p><ul>
 							<li aria-label="Nous sommes ouverts le lundi de 9 heure du matin à 6 heure du soir.">Lundi: 9H00 - 18H00</li>
 							<li aria-label="Nous sommes ouverts le mardi de 9 heure du matin à 6 heure du soir.">Mardi: 9H00 - 18H00</li>
@@ -107,8 +109,8 @@
 							<li aria-label="Nous sommes fermés le dimanche">Dimanche: FERMÉ</li>
 						</ul></p>
 					</div>
-					<div id="formular__container__proposition--alternative__email" class="col-lg-4">
-						<h3>E-mail:</h3>
+					<div id="formular__container__proposition--alternative__email" class="col-lg-4" role="region" aria-labelledby="formular__container__proposition--alternative__email__h3">
+						<h3 id="formular__container__proposition--alternative__email__h3">E-mail:</h3>
 						<p>&#9993; <a href="mailto:contact@lachouetteagence.com" aria-label="Si vous le préférez: Envoyez nous un mail directement à contact@lachouetteagence.com">contact@lachouetteagence.com</a></p>
 					</div>
 				</div>
